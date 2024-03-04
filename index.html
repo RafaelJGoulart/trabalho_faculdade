@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Goulart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images\r.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <!-- Link utilizado somente para cirar os icones do rodapé -->
+
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <img src="images/r.ico" alt="icone">
+        </div>
+        <div class="buttons">
+            <button id="sobre_mim" >Sobre mim</button>
+            <button id="formacao">Formação</button>
+            <button id="portfolio">Portfolio</button>
+            <button id="Contato">Contato</button>
+        </div>
+    </header>
+   
+
+    <div>
+        <div id="sobre_mim" class="show">
+            <div class="me_content">
+                <h1>Quem sou?</h1> 
+                <div class="container_about_me">
+                    <img src="images/rafa.jpeg" alt="" class="me">
+                    <div class="text">
+                    
+                        <h2>Me chamo Rafael Jonathan Goulart.</h2>
+                        <p>Olá! Meu nome é Rafael Jonathan Goulart, tenho 22 anos e nasci em Pindamonhangaba. Já vivi em São Paulo, mas agora estou de volta à minha cidade natal. Sou formado em design gráfico e atualmente estou mergulhado nos estudos de Análise e Desenvolvimento de Sistemas.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+        <div id="formacao" class="hidden">
+            <h1>Formação</h1>
+            <h2>Design Gráfico</h2>
+            <p>Nesse curso concluído em 2021, aprendi diversas ferramentas do ramo e maneiras para lidar com adversidades da profissão.</p>
+            <h2>Análise e Desenvolvimento de sistemas</h2>
+            <p>Nesse curso que ainda está em seguimento estou desenvolvendo minhas habilidades como analista e desenvolvedor de sistemas.</p>
+            <h2>Hábilidades</h2>
+            <div class="bars">
+                <div class="group"><!-- Grupo criado para envolver algumas habilidades-->
+                    <div class="habilidade">
+                        <label for="html">Photoshop:</label>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <label for="html">Illustrator:</label>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <label for="html">Figma:</label>
+                        <div class="barra">
+                            <div class="progresso" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="habilidade">
+                        <label for="html">Web (HTML,CSS e JS):</label>
+                        <div class="barra">
+                            <div class="progresso" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <label for="html">Python:</label>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="hidden">
+            <h1>Portfolio</h1>
+            <!-- Projetos do portfólio -->
+            <div class="content">
+                <img src="images/chamadas automaticas.png" alt="" class="port_img">
+                <p>Um programa feito para automatizar o envio de mensagens para recuperação de alunos ausentes de uma escola do interior do estado de São Paulo.</p>
+            </div>
+            <div class="content">
+                <img src="images/capa.png" alt="" class="port_img">
+                <p>Um projeto de cunho educacional, com o intuito de ensinar lógica de programação e a linguagem Python por meio de um e-book.</p>
+            </div>
+            <div class="content">
+                <img src="images/primoh.png" alt="" class="port_img">
+                <p>Uma identidade visual criada para um escritório de arquitetura fictício, com o intuito de servir como peça de portfólio e porta de entrada para conhecer outros profissionais da área.</p>
+            </div>            
+        </div>
+
+        <div id="contato" class="hidden">
+            <h1>Me envie uma mensagem</h1>
+            <div class="form"> <!-- Formulário de contato -->
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer"><!-- Rodapé -->
+        <p>&copy; 2024 Rafael Jonathan Goulart</p>
+        <!-- Ícones de redes sociais -->
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
